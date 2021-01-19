@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <header><h1>ToDo List</h1></header>
+    <form>
+      <input type="text" class="inputForm" />
+      <button class="buttonForm"><i class="fas fa-plus"></i></button>
+      <select name="todos" class="filterForm">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="Uncompleted">Uncompleted</option>
+      </select>
+      <i class="fas fa-arrow-down" id="arrow"></i>
+    </form>
+    <div class="ListContainer">
+      <ul class="itemList">
+      </ul>
+    </div>
+    <script src="/index.js"></script>
+  </body>
+</html>

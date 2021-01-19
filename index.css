@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #d93e30;
+  color: #d9cbba;
+  min-height: 100vh;
+}
+
+header,
+form {
+  min-height: 18vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  font-size: 40px;
+  letter-spacing: 10px;
+}
+
+.inputForm,
+.buttonForm,
+.filterForm {
+  padding: 10px;
+  height: 7.5vh;
+  border: none;
+  background-color: #d9cbba;
+  outline: none;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  color: #f23535;
+}
+.filterForm{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin-left: 1vh;
+  letter-spacing: 2.5px;
+  font-size: 17.5px;
+  width: 27.5vh;
+  cursor: pointer;
+}
+#arrow {
+  margin-left: -4vh;
+  color: #f23535;
+  cursor: pointer;
+}
+
+.inputForm {
+  width: 40vh;
+}
+.buttonForm {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.buttonForm:hover {
+  background-color: #d93e30;
+  color: #d9cbba;
+}
+
+.itemList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: #d9cbba;
+  color: #f23535;
+  width: 60vh !important;
+  height: 5vh;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  transition: all 2s ease-out;
+}
+li button {
+  flex: -1;
+  outline: none;
+  height: 80%;
+  align-self: center;
+  margin-right: 10px;
+  border: none;
+  width: 15%;
+  cursor: pointer;
+}
+li p {
+  flex: 1;
+  align-self: center;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  color: #f23535;
+}
+
+.okLi {
+  background-color: transparent;
+  transition: all 0.5s ease;
+}
+.okLi:hover {
+  background-color: #f2f2f2;
+}
+
+.delLi {
+  background-color: transparent;
+  transition: all 0.5s ease;
+}
+
+.delLi:hover {
+  background-color: #f23535;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+.checked {
+  background-color: #d93e30;
+  color: #f2f2f2;
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    font-size: 25px;
+  }
+}
